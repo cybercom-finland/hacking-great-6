@@ -3,5 +3,7 @@
 
 Track materials comes here. Check few days before event.
 
+AWS account is required. If you do not have it, Create a new AWS account before event.
+
 Information about the Time and Place, see Meetup registration page https://www.meetup.com/HackingGreat-Cybercom/events/
 
