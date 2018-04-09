@@ -8,6 +8,9 @@ These applications utilize SAM (Simple Application Model), which is kinda like s
 
 If this is too easy for you or you are very fast, you can try expanding your application by making your own building block. Check out track 3b!
 
+- https://aws.amazon.com/serverless/serverlessrepo/
+- https://docs.aws.amazon.com/lambda/latest/dg/serverless_app.html
+
 ## Tech Track 3b - Serverless By Design
 
 https://sbd.danilop.net/
