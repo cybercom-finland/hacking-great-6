@@ -44,7 +44,7 @@ Free Tier.
     alias serverless="$(git rev-parse --show-toplevel)"/node_modules/serverless/bin/serverless
 
     # The example is generated using serverless --template aws-nodejs
-    cd serverless-example/
+    cd serverless/
 
     # Run test, test and remove
     serverless deploy -v 
