@@ -79,10 +79,31 @@ as an example.
     # And GET
     curl -H "Content-Type:application/json" http://localhost:3000/todos
 
+#### Kubeless
+
+Kubeless runs functions inside Kubernetes. The example here uses OpenShift as 
+Kubernetes platform.
+
+Download OpenShift client <https://github.com/openshift/origin/releases> and 
+kubeless client <https://github.com/kubeless/kubeless/releases>.
+
+    oc cluster up
+    oc login -u system:admin
+    oc new-project kubeless
+    export RELEASE=v0.5.0
+    oc create -f https://github.com/kubeless/kubeless/releases/download/$RELEASE/kubeless-openshift-$RELEASE.yaml
+    # see that plugin is running
+    oc get pods -n kubeless
+
+First simple test function from the docs
+
+    oc new-project ftest
+    kubeless function deploy get-python --runtime python2.7 --from-file kubeless/test.py --handler test.foobar
+    kubeless function call get-python --data '{"echo": "hello hacking great"}'
+
 #### Other options
 
 -  <https://open.iron.io> Open Source Serverless Computing - Docker based application images, platform is easy to run
--  <http://kubeless.io> Kubernetes Serverless Framework - Run serverless applications on top of Kubernetes
 
 #### Requirements
 
