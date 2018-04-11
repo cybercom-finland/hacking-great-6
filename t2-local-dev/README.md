@@ -29,7 +29,7 @@ The profile name will be saved to environment variable later.
 
 Pull the serverless client locally to the repo
 
-    npm install serverless
+    (cd .. && npm install serverless)
 
 It is going to be referred locally using shell alias later.
 
