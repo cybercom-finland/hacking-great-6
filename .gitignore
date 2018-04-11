@@ -1,0 +1,3 @@
+# Related to serverless framework
+/node_modules
+.serverless/
